@@ -1,0 +1,124 @@
+/* ROOT VARIABLES/CUSTOMIZATION */
+
+* {
+  font-size: 16px;
+  position: relative;
+  --theme-blue: #3535a7;
+}
+
+body{
+    height: 100vh;
+}
+
+.user_scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  height: calc(100vh - 3.5rem);
+}
+
+/* HEADER */
+
+.header {
+  height: 3.5rem;
+  background-color: var(--theme-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px 12px;
+}
+
+.header_title,
+.header_credits {
+  color: rgb(252, 255, 215);
+}
+
+.header_title {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+/* USER GUIDE COMPONENT */
+
+.guide {
+}
+
+.guide_title {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.guide_instructions {
+  list-style-type: decimal;
+  padding: 0 2rem;
+}
+
+.guide_instruction {
+  list-style-type: decimal;
+}
+
+.input_manager {
+  border: 1px solid darkgrey;
+  width: 70%;
+  height: fit-content;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.new_input-button {
+  padding: 0.25rem;
+}
+
+/* INPUT POPUP */
+.input_popup {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid darkgrey;
+  border-radius: 20px;
+}
+
+.popup_option{
+    margin: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.option_title{
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+#file_input{
+    padding: 10px;
+}
+
+#file_input:focus{
+    border: 2px var(--theme-blue) solid;
+    border-radius: 5px;
+}
+
+.or{
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+
+}
+
+#paste_input{
+    padding: 10px;
+    border: 1px darkgrey solid;
+    border-radius: 5px;
+}
+
+#paste_input:focus{
+    outline: none;
+    border: 2px var(--theme-blue) solid;
+}
