@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import InputPopup from './InputPopup'
 
-function InputManager() {
+function InputManager({  photos, setPhotos }) {
     const [adding, setAdding]= useState(false)
   return (
     <section className="input_manager">
-        *map of input image array here*<br/>
-        {adding && <InputPopup open={setAdding}/>}
+        {photos.length > 0 && photos.map(()=>(
+            
+        ))}
+        <br/>
+        {adding && <InputPopup open={setAdding} photos={photos} setPhotos={setPhotos} />}
         <button className="new_input-button"
         onClick={()=> setAdding(true)}>
             + Add New Image
