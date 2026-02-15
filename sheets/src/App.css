@@ -122,3 +122,27 @@ body{
     outline: none;
     border: 2px var(--theme-blue) solid;
 }
+
+/* IMAGE PREVIEW COMPONENT */
+
+.previews{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.preview_container{
+    height: 150px;
+    width: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preview_image{
+    width: 100%;
+    height: auto;
+}
