@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import InputPopup from './InputPopup'
+import ImagePreview from './ImagePreview'
 
 function InputManager({  photos, setPhotos }) {
     const [adding, setAdding]= useState(false)
   return (
     <section className="input_manager">
-        {photos.length > 0 && photos.map(()=>(
-            
+        {photos.length > 0 && photos.map((photo, index)=>(
+            <ImagePreview photo={photo} index={index} removeImage={()=>{console.log("remove image was pressed")}}/>
         ))}
         <br/>
         {adding && <InputPopup open={setAdding} photos={photos} setPhotos={setPhotos} />}
