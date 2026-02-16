@@ -4,10 +4,12 @@
   font-size: 16px;
   position: relative;
   --theme-blue: #3535a7;
+  --border-radius-big: 20px;
+  --border-radius-small: 5px;
 }
 
-body{
-    height: 100vh;
+body {
+  height: 100vh;
 }
 
 .user_scrollable {
@@ -60,89 +62,112 @@ body{
 
 .input_manager {
   border: 1px solid darkgrey;
+  border-radius: var(--border-radius-big);
   width: 70%;
   height: fit-content;
   padding: 1rem;
   margin: 1rem auto;
 }
 
-.new_input-button {
-  padding: 0.25rem;
+.new_input-button,
+.generate_pdf,
+.reset_all {
+  height: 40px;
+  margin: 0 10px;
+  padding: 10px 20px;
 }
 
 /* INPUT POPUP */
 .input_popup {
   width: 100%;
   height: fit-content;
-  padding: 10px 20px;
+  padding: 30px 40px;
   background-color: white;
   border: 1px solid darkgrey;
-  border-radius: 20px;
+  border-radius: var(--border-radius-big);
 }
 
-.popup_option{
-    margin: 20px;
-    border: 1px solid lightgrey;
-    border-radius: 20px;
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.options {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.option_title{
-    font-size: 1.25rem;
-    padding-bottom: 1rem;
+.popup_option {
+  border: 1px solid lightgrey;
+  border-radius: var(--border-radius-big);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 10;
 }
 
-#file_input{
-    padding: 10px;
+.option_title {
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
 }
 
-#file_input:focus{
-    border: 2px var(--theme-blue) solid;
-    border-radius: 5px;
+#file_input {
+  padding: 10px;
+  width: 80%;
 }
 
-.or{
-    text-align: center;
-    width: 100%;
-    font-weight: 600;
-
+#file_input:focus {
+  border: 2px var(--theme-blue) solid;
+  border-radius: var(--border-radius-big);
 }
 
-#paste_input{
-    padding: 10px;
-    border: 1px darkgrey solid;
-    border-radius: 5px;
+.or {
+  text-align: center;
+  font-weight: 600;
+  flex: 2;
 }
 
-#paste_input:focus{
-    outline: none;
-    border: 2px var(--theme-blue) solid;
+#paste_input {
+  padding: 10px;
+  border: 1px darkgrey solid;
+  border-radius: var(--border-radius-small);
+  width: 80%;
+  text-align: center;
+}
+
+#paste_input:focus {
+  outline: none;
+  border: 2px var(--theme-blue) solid;
+}
+
+.input_cancel {
+  width: 100%;
+  height: 30px;
+  padding: auto;
+  margin-top: 20px;
 }
 
 /* IMAGE PREVIEW COMPONENT */
 
-.previews{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+.previews {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.preview_container{
-    height: 150px;
-    width: 100px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.preview_container {
+  height: 150px;
+  width: 100px;
+  border: 1px solid lightgrey;
+  border-radius: var(--border-radius-small);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.preview_image{
-    width: 100%;
-    height: auto;
+.preview_image {
+  width: 100%;
+  height: auto;
 }
