@@ -171,3 +171,19 @@ body {
   width: 100%;
   height: auto;
 }
+
+
+.pdf_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;align-items: flex-start;
+}
+
+.pdf_button-reset{
+  margin: auto;
+  width: 20%;
+  height: 50px;
+
+}

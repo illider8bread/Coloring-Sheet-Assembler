@@ -114,7 +114,7 @@ function App() {
       <section className="user_scrollable">
         <UserGuide />
         <InputManager photos={photos} setPhotos={setPhotos} pdf={setPdf} />
-        {pdf && <Pdf />}
+        {pdf && <Pdf photos={photos} pdfShow={pdf}/>}
       </section>
     </div>
   );
