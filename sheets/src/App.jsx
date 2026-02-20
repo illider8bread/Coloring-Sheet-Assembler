@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Normalize.css";
 import "./App.css";
-import Pdf from "./components/pdf";
+import Pdf from "./components/Pdf";
 import Header from "./components/Header";
 import InputManager from "./components/InputManager";
 import UserGuide from "./components/UserGuide";
