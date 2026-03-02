@@ -51,8 +51,8 @@ function App() {
     console.log(photo);
     findResolution(photo)
       .then((dimensions) => {
-        const minwidth = 100;
-        const minheight = 100;
+        const minwidth = 2500;
+        const minheight = 3000;
         const width = dimensions.width;
         const height = dimensions.height;
         if (width > height) {
