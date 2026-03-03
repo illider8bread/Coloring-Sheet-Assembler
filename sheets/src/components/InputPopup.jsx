@@ -49,6 +49,7 @@ function InputPopup({ open, setPhotos }) {
           <input
             id="file_input"
             type="file"
+            multiple="multiple"
             accept=".jpeg, .jpg, .png"
             onChange={handleFileUpload}
           />
